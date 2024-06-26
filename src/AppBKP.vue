@@ -1,9 +1,9 @@
 <script>
-import NavBar from './components/NavBar.vue'
-import PostTable from './components/PostTable.vue'
-import FooterVue from './components/FooterVue.vue';
-import ShowImage from './components/ShowImage.vue'
-import PostForm from './components/PostForm.vue'
+import NavBar from './components/BKP/NavBar.vue'
+import PostTable from './components/BKP/PostTable.vue'
+import FooterVue from './components/BKP/FooterVue.vue';
+import ShowImage from './components/BKP/ShowImage.vue'
+import PostForm from './components/BKP/PostForm.vue'
 
 export default {
   components: {

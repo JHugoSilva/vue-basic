@@ -1,15 +1,20 @@
 <script>
-export default {
-    methods: {
 
-    }
+export default {
+    data() {
+        return {
+            appTitle: 'COMPONENTS',
+
+        }
+    },
 }
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
         <div class="container-fluid">
-            <router-link class="navbar-brand" to="/">Navbar</router-link>
+            <slot name="headerLogo"></slot>
+            <a class="navbar-brand" href="#">{{ appTitle }}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -18,15 +23,18 @@ export default {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <router-link to="/" class="nav-link active" aria-current="page" href="#">Home</router-link>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/about">About</router-link>
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Princing</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <router-link to="/auth" class="btn btn-primaty">Register</router-link>
-                </div>
+                <span class="navbar-text">
+                    Navbar text with an inline element
+                </span>
             </div>
         </div>
     </nav>
