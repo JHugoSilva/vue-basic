@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Hugo Silva",
+            "username": "hs",
+            "email": "h@email.com",
+            "address": {
+                "street": "Rua teste1",
+                "suite": "Apt. 556",
+                "city": "Natal",
+                "zipcode": "1231456469"
+            },
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Maria Silva",
+            "username": "hs",
+            "email": "m@email.com",
+            "address": {
+                "street": "Rua teste1",
+                "suite": "Apt. 556",
+                "city": "Natal",
+                "zipcode": "1231456469"
+            },
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        }
+    ]
+}

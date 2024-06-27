@@ -12,6 +12,10 @@ const routes = [
       {
         path: '/about',
         component: () => import('@/views/blog/AboutPage.vue')
+      },
+      {
+        path: '/user/:userId',
+        component: () => import('@/views/blog/UserDetailPage.vue')
       }
     ]
   },
